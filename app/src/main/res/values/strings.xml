@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CountryListTest</string>
+    <string name="update">Update</string>
+    <string name="no_data_found">Error while try to fetch data from server</string>
+</resources>

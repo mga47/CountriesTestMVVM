@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentCountriesList">
+    <fragment
+        android:id="@+id/fragmentCountriesList"
+        android:name="am.gar.countrylisttest.ui.fragment.FragmentCountriesList"
+        android:label="FragmentCountriesList">
+        <action
+            android:id="@+id/selectCountryAction"
+            app:destination="@id/fragmentCountryDetail">
+            <argument
+                android:name="selectedCountry"
+                app:argType="am.gar.countrylisttest.data.model.Country" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCountryDetail"
+        android:name="am.gar.countrylisttest.ui.fragment.FragmentCountryDetail"
+        android:label="FragmentCountryDetail">
+        <argument
+            android:name="selectedCountry"
+            app:argType="am.gar.countrylisttest.data.model.Country" />
+    </fragment>
+</navigation>
